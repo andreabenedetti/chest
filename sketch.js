@@ -1,5 +1,5 @@
 function setup() {
-  createCanvas(800,800);
+  createCanvas(windowWidth, windowHeight);
 }
 
 function draw() {
@@ -21,4 +21,8 @@ function draw() {
     text(s, width/2-75, height/2-50, 150, 100)
   }
 
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
 }
